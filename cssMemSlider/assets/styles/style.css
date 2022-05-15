@@ -24,47 +24,45 @@ body {
   display: none;
 }
 
-.slider__item_one, .slider__text-item_one {
+.item_one, 
+.text_one {
   transform: translateX(-100%);
 }
-.slider__item_two, .slider__text-item_two {
+
+.item_two, 
+.text_two {
   transform: translateX(0);
 }
-.slider__item_three, .slider__text-item_three {
+
+.item_three, 
+.text_three {
   transform: translateX(100%);
 }
-.slider__item_four, .slider__text-item_four {
+
+.item_four, 
+.text_fourth {
   transform: translateX(200%);
 }
 
-
-.slider__input_first:checked~.slider__list .slider__item_one {
+.inpt_frst:checked ~ .slider__list .item_one, 
+.inpt_frst:checked ~ .bottom .text_one {
   transform: translateX(0);
 }
-.slider__input_second:checked~.slider__list .slider__item_two {
+
+.inpt_snd:checked ~ .slider__list .item_two,
+.inpt_snd:checked ~ .bottom .text_two {
   transform: translateX(-100%);
 }
-.slider__input_third:checked~.slider__list .slider__item_three {
+
+.inpt_thd:checked ~ .slider__list .item_three,
+.inpt_thd:checked ~ .bottom .text_three {
   transform: translateX(-200%);
 }
-.slider__input_fourth:checked~.slider__list .slider__item_four {
+
+.inpt_fth:checked ~ .slider__list .item_four,
+.inpt_fth:checked ~ .bottom .text_fourth {
   transform: translateX(-300%);
 }
-
-
-.slider__input_first:checked~.slider__bottom .slider__text .slider__text-item_one {
-  transform: translateX(0);
-}
-.slider__input_second:checked~.slider__bottom .slider__text .slider__text-item_two {
-  transform: translateX(-100%);
-}
-.slider__input_third:checked~.slider__bottom .slider__text .slider__text-item_three {
-  transform: translateX(-200%);
-}
-.slider__input_fourth:checked~.slider__bottom .slider__text .slider__text-item_fourth {
-  transform: translateX(-300%);
-}
-
 
 .slider__list {
   width: 100%;
@@ -86,6 +84,7 @@ body {
   white-space: normal;
   border-radius: 1rem;
 }
+
 .slider__image {
   display: block;
   width: 100%;
@@ -94,7 +93,7 @@ body {
   border-radius: 1rem;
 }
 
-.slider__bottom {
+.bottom {
   height: 5rem;
   display: flex;
   flex-wrap: nowrap;
@@ -122,13 +121,13 @@ body {
   white-space: normal;
 }
 
-.slider__controlls {
+.slider__ctrls {
   display: flex;
   justify-content: end;
   width: 42%;
 }
 
-.slider__label {
+.lbl {
   height: 2.3rem;
   display: block;
   padding: 0.6rem 0.6rem;
@@ -137,40 +136,36 @@ body {
   transition: 0.4s ease;
 }
 
-.slider__label:hover > .slider__button {
+.lbl:hover > .slider__btn {
   background-color: #dcedff;
   transition: 0.4s ease;
 }
 
-.slider__label:active > .slider__button {
+.lbl:active > .slider__btn {
   background-color: #00126e;
   transition: 0.4s ease;
 }
 
-.slider__input_first:checked~.slider__bottom .slider__controlls .slider__label_one .slider__button,
-.slider__input_second:checked~.slider__bottom .slider__controlls .slider__label_two .slider__button,
-.slider__input_third:checked~.slider__bottom .slider__controlls .slider__label_three .slider__button,
-.slider__input_fourth:checked~.slider__bottom .slider__controlls .slider__label_four .slider__button
- {
+.inpt_frst:checked ~ .bottom .slider__ctrls .lbl_one .slider__btn,
+.inpt_snd:checked ~ .bottom .slider__ctrls .lbl_two .slider__btn,
+.inpt_thd:checked ~ .bottom .slider__ctrls .lbl_three .slider__btn,
+.inpt_fth:checked ~ .bottom .slider__ctrls .lbl_four .slider__btn {
   background-color: transparent;
   border-radius: 50%;
   border: 0.2rem solid #3493ff;
   transition: 0.4s ease;
 }
-.slider__input_first:checked~.slider__bottom .slider__controlls .slider__label_one:hover .slider__button,
-.slider__input_second:checked~.slider__bottom .slider__controlls .slider__label_two:hover .slider__button,
-.slider__input_third:checked~.slider__bottom .slider__controlls .slider__label_three:hover .slider__button,
-.slider__input_fourth:checked~.slider__bottom .slider__controlls .slider__label_four:hover .slider__button
- {
+
+.slider__input:checked ~ .bottom .slider__ctrls .lbl:hover .slider__btn {
   border: 0.2rem solid #dcedff;
   transition: 0.4s ease;
 }
 
-.slider__input:checked~.slider__bottom .slider__controlls .slider__label:active .slider__button {
+.slider__input:checked ~ .bottom .slider__ctrls .lbl:active .slider__btn {
   border: 0.2rem solid #00126e;
 }
 
-.slider__button {
+.slider__btn {
   display: block;
   padding: 0.3rem;
   background-color: #3493ff;
@@ -192,7 +187,7 @@ body {
     margin-bottom: 0;
   }
 
-  .slider__bottom {
+  .bottom {
     flex-wrap: wrap;
   }
   
@@ -206,7 +201,7 @@ body {
     font-size: 1rem;
   }
   
-  .slider__controlls {
+  .slider__ctrls {
     display: flex;
     justify-content: center;
     width: 100%;
