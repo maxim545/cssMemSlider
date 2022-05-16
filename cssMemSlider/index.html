@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssMemSlider</title>
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <input class="slider__input inpt_frst" type="radio" name="memSLider" id="first_slide" checked />
+            <input class="slider__input inpt_snd" type="radio" name="memSLider" id="second_slide"/>
+            <input class="slider__input inpt_thd" type="radio" name="memSLider" id="third_slide"/>
+            <input class="slider__input inpt_fth" type="radio" name="memSLider" id="fourth_slide"/>
+            <div class="slider__list">
+                <div class="slider__item item_one"><img class="slider__image" src="assets/images/image-1.jpg" alt="image-1"></div>
+                <div class="slider__item item_two"><img class="slider__image" src="assets/images/image-2.jpg" alt="image-2"></div>
+                <div class="slider__item item_three"><img class="slider__image" src="assets/images/image-3.jpg" alt="image-3"></div>
+                <div class="slider__item item_four"><img class="slider__image" src="assets/images/image-4.jpg" alt="image-4"></div>
+            </div>
+            <div class="bottom">
+                <div class="slider__text">
+                    <p class="slider__text-item text_one">Harold meme...</p>
+                    <p class="slider__text-item text_two">Before you go...</p>
+                    <p class="slider__text-item text_three">Neighbors...</p>
+                    <p class="slider__text-item text_fourth">Again...</p>
+                </div>
+                <div class="slider__ctrls">
+                    <label class="lbl lbl_one" for="first_slide"><span class="slider__btn"></span></label>
+                    <label class="lbl lbl_two" for="second_slide"><span class="slider__btn"></span></label>
+                    <label class="lbl lbl_three" for="third_slide"><span class="slider__btn"></span></label>
+                    <label class="lbl lbl_four" for="fourth_slide"><span class="slider__btn"></span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
